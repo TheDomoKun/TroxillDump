@@ -13,10 +13,10 @@ import java.util.Objects;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.network.play.ClientPlayNetHandler;
 
-public class Class18 extends ChannelDuplexHandler {
+public class CustomPacketHandler extends ChannelDuplexHandler {
   private final ModuleManager Field30;
   
-  public Class18(ModuleManager paramModuleManager) {
+  public CustomPacketHandler(ModuleManager paramModuleManager) {
     this.Field30 = paramModuleManager;
     ChannelPipeline channelPipeline = ((ClientPlayNetHandler)Objects.<ClientPlayNetHandler>requireNonNull(Minecraft.getInstance().getConnection())).getNetworkManager().channel().pipeline();
     channelPipeline.addBefore("packet_handler", "PacketHandler", (ChannelHandler)this);

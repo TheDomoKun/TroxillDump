@@ -3,7 +3,7 @@
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.GameType;
 import net.minecraft.world.World;
-import package0.Class18;
+import package0.CustomPacketHandler;
 
 public class Class38 {
   private World Field92;
@@ -24,7 +24,7 @@ public class Class38 {
       return;
     } 
     if (!this.Field94) {
-      new Class18(TroxillMain.getModuleManager());
+      new CustomPacketHandler(TroxillMain.getModuleManager());
       this.Field94 = true;
     } 
     if ((Minecraft.getInstance()).world == this.Field92) {
