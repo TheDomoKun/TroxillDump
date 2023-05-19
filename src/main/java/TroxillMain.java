@@ -22,7 +22,6 @@ public class TroxillMain extends Exception {
     InputStream inputStream = sock.getInputStream();
     InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
     BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-
     String str2 = bufferedReader.readLine();
     if (str2.equals("1")) {
       if (counter > 0)
